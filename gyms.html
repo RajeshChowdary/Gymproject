@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	 
+		<title>Find Gyms Near To You</title>
+<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="mycss.css">
+	</head>
+
+	<body>
+
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">GymFit</a>
+					<a class="navbar-brand" href="gymslist.html">Browse Gyms</a>
+					
+
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						
+						
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					 
+						<a href="signin.html">SignIn</a>
+						<a href="signup.html">SignUp</a>
+						
+					 
+						
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+ <br><br><br>
+ 
+
+<div class="container">
+	
+	<div class="row" >
+	<div class="col-md-3 col-lg-3">
+		<h3> Categories</h3>
+		<ul class="list-group">
+				<li class="list-group-item">Yoga</li>
+				<li class="list-group-item">Strength Training Exercise</li>        
+				<li class="list-group-item">Flexibility Exercise</li>
+				<li class="list-group-item">Balance Exercise</li>
+		</ul>
+</div>
+
+	<div class="container" id="gyms">
+	<div class="row" >
+		
+	</div>
+		
+	</div>
+
+<script>
+
+function mydata(arr) {
+		var out = "";
+		var i;
+		for(i = 0; i<arr.length; i++) {
+
+			document.writeln('<div class="col-lg-3 col-md-3">');
+			document.writeln('<div class="thumbnail">');
+			document.writeln('<img src="'+arr[i].image+'">');
+			document.writeln('<div class="caption">');
+			document.writeln('<h3>'+arr[i].name+'</h3>');
+			document.writeln(' <span class="glyphicon glyphicon-home" aria-hidden="true"><Strong>'+arr[i].location+' Gachibowli,Hyderabad</Strong></span>');
+			document.writeln('<p><a href="#" class="btn btn-primary" role="button">View Details</a> </p>');
+			document.writeln('</div>');
+			document.writeln('</div>');
+			document.writeln('</div>');
+
+		}
+		// document.getElementById("gyms").innerHTML = out; 
+}
+
+
+</script>
+
+<script src="mydata.js"></script>
+ 
+<!-- end of third row-->
+
+</div>
+</div>
+
+<!--footer -->
+<div id="footer" style="margin-top:40px; padding-top:10px; padding-bottom:10px;">
+						<div class="container">
+								<div class="col-md-3 col-sm-6 col-xs-12">
+										<p><a href="index.html" title="PrepBootstrap - Bootstrap Themes and Templates">Home</a></p>
+										<p><a href="about_us.html" title="PrepBootstrap - Contact Us">About Us</a></p>
+										<p><a href="contact_us.html" title="PrepBootstrap - Licensing">Contact Us</a></p>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12">                
+										<p><a href="products.html" title="BootStrap Templates">Browse Gyms</a></p>
+									
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-6">
+										<span class="pull-right">Designed By Rajesh Kumar</span>
+										
+								</div>
+								
+						</div>
+				</div>
+	 
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+
+</body></html>
