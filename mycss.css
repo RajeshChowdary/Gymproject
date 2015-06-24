@@ -14,19 +14,22 @@ label.error {
 
 .search
 {
-background-color: #F5ECCE;
+background-color: #CFCFC4;
 border: 5px solid white;
+border-radius: 15px;
 }
 
 .list
 {
-background-color: #81DAF5;
+background-color: #93C572;
 border: 5px solid white;
+border-radius: 15px;
 }
 .go
 {
-background-color: #A9F5E1;
+background-color: #A1CAF1;
 border: 5px solid white;
+border-radius: 15px;
 }
 .footer {
    position:fixed;
@@ -36,18 +39,42 @@ font-size: 16px ;
 font-family: verdana ;
 width: 600px ;
 height: 50px ;
-background-color: blue ;
+background-color: #738678 ;
 }
 
 nav
 {
     padding-top: 20px;
-}
-#footer
-{
-    background-color: black;
+
 }
 
+.navbar
+{
+    background-color: #ACE1AF;
+}
+
+#footer
+{
+    background-color: #2f3235;
+
+} 
+/*
+#footer{
+    position:fixed;
+    height:50px;
+    background-color:#2f3235;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+} */
+p {
+  margin: 0 0 15px 0;
+}
+body
+{
+    background-color: #eeeef4;
+}
  .animated {
     -webkit-transition: height 0.2s;
     -moz-transition: height 0.2s;
