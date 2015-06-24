@@ -12,7 +12,22 @@ label.error {
     margin-top: 2px;
 }
 
+.search
+{
+background-color: #F5ECCE;
+border: 5px solid white;
+}
 
+.list
+{
+background-color: #81DAF5;
+border: 5px solid white;
+}
+.go
+{
+background-color: #A9F5E1;
+border: 5px solid white;
+}
 .footer {
    position:fixed;
 bottom:0;
@@ -23,17 +38,11 @@ width: 600px ;
 height: 50px ;
 background-color: blue ;
 }
-div.container
+
+nav
 {
     padding-top: 20px;
 }
-/*
-div.car
-{
-    padding-top: 25px;
-
-} */
-
 #footer
 {
     background-color: black;
