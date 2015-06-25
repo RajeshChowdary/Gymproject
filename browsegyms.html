@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+   
+    <title>Find Gyms Near To You</title>
+<!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+   <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="assets/css/stream.css" media="screen" rel="stylesheet" type="text/css">
     <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -11,9 +16,12 @@
     <script src="dist/filter.js" type="text/javascript"></script>
     <script src="data/movies.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
+
   </head>
+
   <body>
 
+    <!-- Fixed navbar -->
     <nav class="navbar navbar-default" >
       <div class="container">
         <div class="navbar-header">
@@ -43,10 +51,10 @@
     </nav>
 
     <div class="container">
-     
+      <h1 class="title">Filter.js</h1>
       <div class="sidebar col-md-3">
         <div class="row">
-          <h4 class="col-md-6"> Gyms (<span id="total_movies">0</span>)</h4>
+          <h4 class="col-md-6"> Movies (<span id="total_movies">0</span>)</h4>
           <div class="col-md-6 progress">
             <div class="progress-bar" id="stream_progress" style="width: 0%">0 %</div>
           </div>
@@ -135,7 +143,81 @@
                     <input type="checkbox" value="Action">
                     Action </label>
                 </div>
-                
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Biography">
+                    Biography </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="History">
+                    History </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="War">
+                    War </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Fantasy">
+                    Fantasy </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Sci-Fi">
+                    Sci-Fi </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Mystery">
+                    Mystery </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Romance">
+                    Romance </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Family">
+                    Family </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Horror">
+                    Horror </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Film-Noir">
+                    Film-Noir </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Comedy">
+                    Comedy </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Animation">
+                    Animation </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Musical">
+                    Musical </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Music">
+                    Music </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Sport">
+                    Sport </label>
+                </div>
             </fieldset>
         </div>
     </div>
@@ -147,18 +229,33 @@
 <!-- /.container -->
 
       <script id="movie-template" type="text/html">
-        
-      <div class="col-md-4 movie">
-    <div class="thumbnail">
-      <img src="<%= image %>" alt="...">
-      <div class="caption">
-        <h3><%= name %></h3>
-        <span class="glyphicon glyphicon-home" aria-hidden="true"><Strong><%= location %></Strong></span>
-        <p><a href="#" class="btn btn-primary" role="button">View Details</a> </p>
+        <div class="col-md-4 movie">
+          <div class="thumbnail">
+            <span class="label label-success rating"><%= rating %>
+            <i class="glyphicon glyphicon-star"></i>
+          </span>
+          <div class="caption">
+            <h4><%= name %></h4>
+            <div class="outline">
+              <%= outline %>
+              <span class="runtime">
+                <i class="glyphicon glyphicon-time"></i>
+                <%= runtime %> mins.
+              </span>
+            </div>
+            <div class="detail">
+              <dl>
+                <dt>Director</dt>
+                <dd><%= director %></dd>
+                <dt>Actors</dt>
+                <dd><%= stars %></dt>
+                <dt>Year</dt>
+                <dd><%= year %></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
       </script>
       <script id="genre_template" type="text/html">
         <div class="checkbox">
@@ -167,8 +264,10 @@
           </label>
         </div>
       </script>
-
-      <div id="footer" style="margin-top:40px; padding-top:10px; padding-bottom:10px;">
+ 
+ 
+ <!--  footer -->
+<div id="footer" style="margin-top:40px; padding-top:10px; padding-bottom:10px;">
             <div class="container">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <p><a href="index.html" title="PrepBootstrap - Bootstrap Themes and Templates">Home</a></p>
@@ -187,5 +286,10 @@
             </div>
         </div>
 
-    </body>
-  </html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+
+</body></html>

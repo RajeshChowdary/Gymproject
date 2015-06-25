@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Yojimbo",
+    "outline": "A crafty ronin comes to a town divided by two criminal gangs and decides to play them against each other to free the town.",
+    "rating": 8.4,
+    "director": "Akira Kurosawa",
+    "year": 1961,
+    "stars": [
+      "Toshirô Mifune",
+      "Eijirô Tôno",
+      "Tatsuya Nakadai"
+    ],
+    "runtime": 110,
+    "genre": [
+      "Action",
+      "Adventure"
+    ],
+    "certificate": "TV_MA",
+    "date": "1981-08-02T10:29:29+05:30",
+    "actor": "Toshirô Mifune",
+    "id": 250
+  },
+  {
+    "name": "2001: A Space Odyssey",
+    "outline": "Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.",
+    "rating": 8.4,
+    "director": "Stanley Kubrick",
+    "year": 1968,
+    "stars": [
+      "Keir Dullea",
+      "Gary Lockwood",
+      "William Sylvester"
+    ],
+    "runtime": 141,
+    "genre": [
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "certificate": "TV_PG",
+    "date": "1970-07-02T10:29:29+05:30",
+    "actor": "Keir Dullea",
+    "id": 251
+  },
+  {
+    "name": "The Bridge on the River Kwai",
+    "outline": "After settling his differences with a Japanese PoW camp commander, a British colonel co-operates to oversee his men's construction of a railway bridge for their captors - while oblivious to a plan by the Allies to destroy it.",
+    "rating": 8.3,
+    "director": "David Lean",
+    "year": 1957,
+    "stars": [
+      "William Holden",
+      "Alec Guinness",
+      "Jack Hawkins"
+    ],
+    "runtime": 161,
+    "genre": [
+      "Adventure",
+      "Drama",
+      "History",
+      "War"
+    ],
+    "certificate": "APPROVED",
+    "date": "2001-09-25T10:29:29+05:30",
+    "actor": "William Holden",
+    "id": 252
+  },
+  {
+    "name": "Raging Bull",
+    "outline": "An emotionally self-destructive boxer's journey through life, as the violence and temper that leads him to the top in the ring, destroys his life outside it.",
+    "rating": 8.3,
+    "director": "Martin Scorsese",
+    "year": 1980,
+    "stars": [
+      "Robert De Niro",
+      "Cathy Moriarty",
+      "Joe Pesci"
+    ],
+    "runtime": 129,
+    "genre": [
+      "Biography",
+      "Drama",
+      "Sport"
+    ],
+    "certificate": "R",
+    "date": "2000-04-30T10:29:29+05:30",
+    "actor": "Robert De Niro",
+    "id": 253
+  },
+  {
+    "name": "Unforgiven",
+    "outline": "Retired Old West gunslinger William Munny reluctantly takes on one last job, with the help of his old partner and a young man.",
+    "rating": 8.3,
+    "director": "Clint Eastwood",
+    "year": 1992,
+    "stars": [
+      "Clint Eastwood",
+      "Gene Hackman",
+      "Morgan Freeman"
+    ],
+    "runtime": 131,
+    "genre": [
+      "Western"
+    ],
+    "certificate": "R",
+    "date": "2005-11-24T10:29:29+05:30",
+    "actor": "Clint Eastwood",
+    "id": 254
+  },
+  {
+    "name": "Mr. Smith Goes to Washington",
+    "outline": "A naive man is appointed to fill a vacancy in the US Senate. His plans promptly collide with political corruption, but he doesn't back down.",
+    "rating": 8.3,
+    "director": "Frank Capra",
+    "year": 1939,
+    "stars": [
+      "James Stewart",
+      "Jean Arthur",
+      "Claude Rains"
+    ],
+    "runtime": 129,
+    "genre": [
+      "Drama"
+    ],
+    "certificate": "APPROVED",
+    "date": "1962-07-24T10:29:29+05:30",
+    "actor": "James Stewart",
+    "id": 255
+  },
+  {
+    "name": "The General",
+    "outline": "When Union spies steal an engineer's beloved locomotive, he pursues it single handedly and straight through enemy lines.",
+    "rating": 8.3,
+    "director": "Clyde Bruckman",
+    "year": 1926,
+    "stars": [
+      "Buster Keaton",
+      "Buster Keaton",
+      "Marion Mack",
+      "Glen Cavender"
+    ],
+    "runtime": 107,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Romance",
+      "War"
+    ],
+    "certificate": "UNRATED",
+    "date": "1983-06-04T10:29:29+05:30",
+    "actor": "Buster Keaton",
+    "id": 256
+  },
+  {
+    "name": "Indiana Jones and the Last Crusade",
+    "outline": "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his father's footsteps and stop the Nazis.",
+    "rating": 8.3,
+    "director": "Steven Spielberg",
+    "year": 1989,
+    "stars": [
+      "Harrison Ford",
+      "Sean Connery",
+      "Alison Doody"
+    ],
+    "runtime": 127,
+    "genre": [
+      "Action",
+      "Adventure"
+    ],
+    "certificate": "United States-E",
+    "date": "2014-03-19T10:29:29+05:30",
+    "actor": "Harrison Ford",
+    "id": 257
+  },
+  {
+    "name": "Batman Begins",
+    "outline": "After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.",
+    "rating": 8.3,
+    "director": "Christopher Nolan",
+    "year": 2005,
+    "stars": [
+      "Christian Bale",
+      "Michael Caine",
+      "Ken Watanabe"
+    ],
+    "runtime": 140,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Drama"
+    ],
+    "certificate": "PG_13",
+    "date": "2003-03-20T10:29:29+05:30",
+    "actor": "Christian Bale",
+    "id": 258
+  },
+  {
+    "name": "For a Few Dollars More",
+    "outline": "Two bounty hunters with the same intentions, team up to track down a Western outlaw.",
+    "rating": 8.3,
+    "director": "Sergio Leone",
+    "year": 1965,
+    "stars": [
+      "Clint Eastwood",
+      "Lee Van Cleef",
+      "Gian Maria Volonté"
+    ],
+    "runtime": 132,
+    "genre": [
+      "Western"
+    ],
+    "certificate": "APPROVED",
+    "date": "2006-07-25T10:29:29+05:30",
+    "actor": "Clint Eastwood",
+    "id": 259
+  },
+  {
+    "name": "The Great Escape",
+    "outline": "Allied POWs plan for several hundred of their number to escape from a German camp during World War II.",
+    "rating": 8.3,
+    "director": "John Sturges",
+    "year": 1963,
+    "stars": [
+      "Steve McQueen",
+      "James Garner",
+      "Richard Attenborough"
+    ],
+    "runtime": 172,
+    "genre": [
+      "Adventure",
+      "Drama",
+      "History",
+      "Thriller",
+      "War"
+    ],
+    "certificate": "UNRATED",
+    "date": "1999-04-14T10:29:29+05:30",
+    "actor": "Steve McQueen",
+    "id": 260
+  },
+  {
+    "name": "On the Waterfront",
+    "outline": "An ex-prize fighter turned longshoreman struggles to stand up to his corrupt union bosses.",
+    "rating": 8.3,
+    "director": "Elia Kazan",
+    "year": 1954,
+    "stars": [
+      "Marlon Brando",
+      "Karl Malden",
+      "Lee J. Cobb"
+    ],
+    "runtime": 108,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "certificate": "APPROVED",
+    "date": "1997-02-11T10:29:29+05:30",
+    "actor": "Marlon Brando",
+    "id": 261
+  },
+  {
+    "name": "The Kid",
+    "outline": "The Tramp cares for an abandoned child, but events put that relationship in jeopardy.",
+    "rating": 8.3,
+    "director": "Charles Chaplin",
+    "year": 1921,
+    "stars": [
+      "Charles Chaplin",
+      "Edna Purviance",
+      "Jackie Coogan"
+    ],
+    "runtime": 68,
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "certificate": "NOT_RATED",
+    "date": "1964-12-04T10:29:29+05:30",
+    "actor": "Charles Chaplin",
+    "id": 262
+  },
+  
+]
