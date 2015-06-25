@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
 
   FJS.addCallback('beforeAddRecords', function(){
-    if(this.recordsCount >= 450){
+    if(this.recordsCount >= result.length){
       this.stopStreaming();
     }
   });
@@ -72,13 +72,13 @@ function initSliders(){
   });
 
   $("#runtime_slider").slider({
-    min: 50,
-    max: 250,
+    min: 1000,
+    max: 10000,
     values:[0, 250],
     step: 10,
     range:true,
     slide: function( event, ui ) {
-      $("#runtime_range_label" ).html(ui.values[ 0 ] + ' mins. - ' + ui.values[ 1 ] + ' mins.');
+      $("#runtime_range_label" ).html(ui.values[ 0 ] + ' Rs. - ' + ui.values[ 1 ] + ' Rs.');
       $('#runtime_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
     }
   });
