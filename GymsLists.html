@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/css/stream.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <script src="dist/filter.js" type="text/javascript"></script>
+    <script src="data/movies.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">GymFit</a>
+          <a class="navbar-brand" href="GymsLists.html">Browse Gyms</a>
+          
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            
+          </ul>
+           <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+     
+      <div class="sidebar col-md-3">
+        <div class="row">
+          <h4 class="col-md-6"> Gyms (<span id="total_movies">0</span>)</h4>
+          
+        </div><!-- /.row -->
+        <form class="form-inline searchbox">
+            <div class="form-group">
+                <label class="sr-only" for="searchbox">Search</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchbox" placeholder="Search &hellip;">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="well">
+            <fieldset id="genre_criteria">
+                <legend>Category</legend>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="All" id="all_genre">
+                    All</label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Yoga">
+                    Yoga</label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Personal">
+                    Personal training </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Cardio">
+                    Cardio</label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Group">
+                    Group exercise </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Aerobic">
+                    Aerobic </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Body">
+                    Body Building </label>
+                </div>
+                
+            </fieldset>
+        </div>
+        <div class="well">
+            <fieldset id="rating_criteria">
+                <legend>Rating</legend> <span id="rating_range_label" class="slider-label">8 - 10</span>
+                <div id="rating_slider" class="slider">
+                </div>
+                <input type="hidden" id="rating_filter" value="8-10">
+            </fieldset>
+        </div>
+        <div class="well">
+            <fieldset id="runtime_criteria">
+                <legend>Price</legend> <span id="runtime_range_label" class="slider-label">1000 Rs - 10000 Rs</span>
+                <div id="runtime_slider" class="slider">
+                </div>
+                <input type="hidden" id="runtime_filter" value="1000-10000">
+            </fieldset>
+        </div>
+        <div class="well">
+            <fieldset id="year_criteria">
+                <legend>Location</legend>
+                <select class="form-control" id="year_filter">
+                    <option value="all">All</option>
+                    <option value="Gachibowli">Gachibowli</option>
+                    <option value="Indra nagar">Indra nagar</option>
+                    <option value="Film Nagar">Film Nagar</option>
+                    <option value="Jublihills">Jublihills</option>
+                    <option value="Hitechcity">Hitechcity</option>
+                    <option value="Kondapure">Kondapure</option>
+                    <option value="Madhapure">Madhapure</option>
+                    
+                </select>
+            </fieldset>
+        </div>
+        
+    </div>
+
+<!-- /.col-md-3 -->
+    <div class="movies content col-md-9" id="movies"> </div>
+<!-- /.col-md-9 -->
+</div>
+<!-- /.container -->
+
+      <script id="movie-template" type="text/html">
+        
+      <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="<%= image %>" alt="...">
+      <div class="caption">
+        <h3><%= name %></h3>
+        <span class="glyphicon glyphicon-home" aria-hidden="true"><Strong><%= location %></Strong></span>
+        <p><a href="#" class="btn btn-primary" role="button">View Details</a> </p>
+      </div>
+    </div>
+  </div>
+
+      </script>
+      <script id="genre_template" type="text/html">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="<%= genre %>"> <%= genre %>
+          </label>
+        </div>
+      </script>
+
+      <div id="footer" style="margin-top:40px; padding-top:10px; padding-bottom:10px;">
+            <div class="container">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <p><a href="home.html" title="PrepBootstrap - Bootstrap Themes and Templates">Home</a></p>
+                    <p><a href="AboutUs.html" title="PrepBootstrap - Contact Us">About Us</a></p>
+                    <p><a href="ContactUs.html" title="PrepBootstrap - Licensing">Contact Us</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">                
+                    <p><a href="products.html" title="BootStrap Templates">Browse Gyms</a></p>
+                  
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                    <span class="pull-right">Designed By Rajesh Kumar</span>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </body>
+  </html>
